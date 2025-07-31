@@ -94,42 +94,51 @@ function App() {
         </div>
       </section>
 
-      {/* Flutter History Section */}
+            {/* Flutter History Section */}
       <section className="px-4 lg:px-8 py-12">
         <div className="max-w-7xl mx-auto">
           <div className="bg-gradient-to-r from-[#08A7CE]/10 to-transparent rounded-3xl p-8 lg:p-12">
-            <div className="grid lg:grid-cols-3 gap-8 items-center">
-              <div className="space-y-4">
-                <h2 className="text-2xl lg:text-4xl font-medium">
-                  Flutter's Dawn
-                </h2>
-                <p className="text-sm font-semibold text-gray-400">
-                  History of flutter
-                </p>
+            <div className="grid lg:grid-cols-3 gap-8 items-start">
+              {/* First Container: Flutter's Dawn Section */}
+              <div className="flutter-dawn-container">
+                <span className="flutter-dawn-line1">Flutter's</span>
+                <span className="flutter-dawn-line2">Dawn</span>
+                <span className="flutter-dawn-line3">History of flutter</span>
               </div>
-              <div className="lg:col-span-2">
-                <p className="text-base lg:text-lg leading-relaxed text-gray-300 mb-6">
-                  Uncover the fascinating story of Flutter in 'Flutter's Dawn:
-                  History of Flutter.' From humble origins to global acclaim,
-                  delve into its captivating narrative. Explore milestones,
-                  triumphs, and challenges. Whether tech enthusiast or curious
-                  mind, join us on this captivating journey! Click to begin!
-                </p>
-                <button className="bg-[#08A7CE] hover:bg-[#0698b8] px-8 py-4 rounded-full font-bold text-sm transition-colors flex items-center gap-3">
-                  BEGIN
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
-              </div>
+              
+                             {/* Second Container: Main Content (Middle) */}
+               <div className="flutter-dawn-middle-container">
+                 <p className="flutter-dawn-paragraph text-gray-300 text-center">
+                   Uncover the fascinating story of Flutter in 'Flutter's Dawn:
+                   History of Flutter.' From humble origins to global acclaim,
+                   delve into its captivating narrative. Explore milestones,
+                   triumphs, and challenges. Whether tech enthusiast or curious
+                   mind, join us on this captivating journey! <span className="text-blue-100">Click to begin!</span>
+                 </p>
+               </div>
+              
+                             {/* Third Container: BEGIN Button with Arrow */}
+               <div className="relative h-full">
+                 {/* BEGIN button positioned at bottom right */}
+                 <div className="absolute bottom-0 right-0">
+                   <button className="bg-[#08A7CE] hover:bg-[#0698b8] px-8 py-4 rounded-full font-bold text-sm transition-colors flex items-center gap-3">
+                     BEGIN
+                                           <svg
+                        className="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                                                 <path
+                           d="M5 16L15 6M15 6H5M15 6V16"
+                           stroke="currentColor"
+                           strokeWidth="2"
+                           strokeLinecap="round"
+                           strokeLinejoin="round"
+                         />
+                      </svg>
+                   </button>
+                 </div>
+               </div>
             </div>
           </div>
         </div>

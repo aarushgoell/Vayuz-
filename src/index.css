@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "tailwindcss";
 
 /* Custom animations and styles */
@@ -27,6 +29,87 @@
 
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out;
+}
+
+/* Flutter's Dawn Typography */
+.flutter-dawn-container {
+  width: 258px;
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flutter-dawn-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 106%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.flutter-dawn-line1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 106%;
+  letter-spacing: 0%;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.flutter-dawn-line2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 106%;
+  letter-spacing: 0%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.flutter-dawn-line3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: block;
+  color: white;
+  vertical-align: middle;
+}
+
+.flutter-dawn-paragraph {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+  padding: 0;
+  word-spacing: normal;
+  hyphens: auto;
+}
+
+.flutter-dawn-middle-container {
+  width: 405px;
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transform: rotate(0deg);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Smooth scrolling */
